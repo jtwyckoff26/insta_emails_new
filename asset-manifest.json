@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/insta_emails_new/static/css/main.022d19ec.chunk.css",
-    "main.js": "/insta_emails_new/static/js/main.d47baa3e.chunk.js",
-    "main.js.map": "/insta_emails_new/static/js/main.d47baa3e.chunk.js.map",
+    "main.js": "/insta_emails_new/static/js/main.d5f98ba7.chunk.js",
+    "main.js.map": "/insta_emails_new/static/js/main.d5f98ba7.chunk.js.map",
     "runtime-main.js": "/insta_emails_new/static/js/runtime-main.8f5151f1.js",
     "runtime-main.js.map": "/insta_emails_new/static/js/runtime-main.8f5151f1.js.map",
-    "static/js/2.06207fc8.chunk.js": "/insta_emails_new/static/js/2.06207fc8.chunk.js",
-    "static/js/2.06207fc8.chunk.js.map": "/insta_emails_new/static/js/2.06207fc8.chunk.js.map",
+    "static/js/2.e5901910.chunk.js": "/insta_emails_new/static/js/2.e5901910.chunk.js",
+    "static/js/2.e5901910.chunk.js.map": "/insta_emails_new/static/js/2.e5901910.chunk.js.map",
     "index.html": "/insta_emails_new/index.html",
-    "precache-manifest.083b490ae6e5830b2803c3ef2d140512.js": "/insta_emails_new/precache-manifest.083b490ae6e5830b2803c3ef2d140512.js",
+    "precache-manifest.78946bbbee13ced0a2f39aae53d904a3.js": "/insta_emails_new/precache-manifest.78946bbbee13ced0a2f39aae53d904a3.js",
     "service-worker.js": "/insta_emails_new/service-worker.js",
     "static/css/main.022d19ec.chunk.css.map": "/insta_emails_new/static/css/main.022d19ec.chunk.css.map",
-    "static/js/2.06207fc8.chunk.js.LICENSE.txt": "/insta_emails_new/static/js/2.06207fc8.chunk.js.LICENSE.txt"
+    "static/js/2.e5901910.chunk.js.LICENSE.txt": "/insta_emails_new/static/js/2.e5901910.chunk.js.LICENSE.txt",
+    "static/media/loading.gif": "/insta_emails_new/static/media/loading.8c328009.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.8f5151f1.js",
-    "static/js/2.06207fc8.chunk.js",
+    "static/js/2.e5901910.chunk.js",
     "static/css/main.022d19ec.chunk.css",
-    "static/js/main.d47baa3e.chunk.js"
+    "static/js/main.d5f98ba7.chunk.js"
   ]
 }
