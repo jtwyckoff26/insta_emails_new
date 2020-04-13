@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3d0e71cae0bd69786366e6be2ed2adb",
+    "revision": "3bcaae35285d67bdcf19506b9fe6ee9b",
     "url": "/insta_emails_new/index.html"
   },
   {
-    "revision": "93aa136f6de6fdf7e72e",
+    "revision": "9939e6419721fa8c2e71",
     "url": "/insta_emails_new/static/css/main.022d19ec.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insta_emails_new/static/js/2.06207fc8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "93aa136f6de6fdf7e72e",
-    "url": "/insta_emails_new/static/js/main.be54a41e.chunk.js"
+    "revision": "9939e6419721fa8c2e71",
+    "url": "/insta_emails_new/static/js/main.40963257.chunk.js"
   },
   {
     "revision": "1f9579bf7dcb9c968844",
