@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/insta_emails_new/precache-manifest.203117f661a864ca302887b7dd2e8088.js"
+  "/insta_emails_new/precache-manifest.097674a91ca802062e67a781980d1b8b.js"
 );
 
 self.addEventListener('message', (event) => {
