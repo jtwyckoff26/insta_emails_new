@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/insta_emails_new/static/css/main.022d19ec.chunk.css",
+    "main.js": "/insta_emails_new/static/js/main.6a645098.chunk.js",
+    "main.js.map": "/insta_emails_new/static/js/main.6a645098.chunk.js.map",
+    "runtime-main.js": "/insta_emails_new/static/js/runtime-main.8f5151f1.js",
+    "runtime-main.js.map": "/insta_emails_new/static/js/runtime-main.8f5151f1.js.map",
+    "static/js/2.53e9c6d1.chunk.js": "/insta_emails_new/static/js/2.53e9c6d1.chunk.js",
+    "static/js/2.53e9c6d1.chunk.js.map": "/insta_emails_new/static/js/2.53e9c6d1.chunk.js.map",
+    "index.html": "/insta_emails_new/index.html",
+    "precache-manifest.e9a14809037031a97f16972578b8b433.js": "/insta_emails_new/precache-manifest.e9a14809037031a97f16972578b8b433.js",
+    "service-worker.js": "/insta_emails_new/service-worker.js",
+    "static/css/main.022d19ec.chunk.css.map": "/insta_emails_new/static/css/main.022d19ec.chunk.css.map",
+    "static/js/2.53e9c6d1.chunk.js.LICENSE.txt": "/insta_emails_new/static/js/2.53e9c6d1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f5151f1.js",
+    "static/js/2.53e9c6d1.chunk.js",
+    "static/css/main.022d19ec.chunk.css",
+    "static/js/main.6a645098.chunk.js"
+  ]
+}
