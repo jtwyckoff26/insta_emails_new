@@ -1,2 +1,0 @@
-(this.webpackJsonpinsta_emails_new=this.webpackJsonpinsta_emails_new||[]).push([[13],{321:function(e,a,n){"use strict";n.r(a);var s=n(1),t=n.n(s);a.default=function(e){return t.a.createElement("div",null,t.a.createElement("div",{className:"form-container"},t.a.createElement("h1",null,"Change Password"),t.a.createElement("p",null,"Your password has been successfully updated!")))}}}]);
-//# sourceMappingURL=13.0c1f2fb8.chunk.js.map
