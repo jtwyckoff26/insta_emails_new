@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e09b4a9a40166f09f112f0b5503d053",
+    "revision": "52a2ceb06c9186721f60511a73354bc9",
     "url": "/insta_emails_new/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insta_emails_new/static/css/5.19d7317f.chunk.css"
   },
   {
-    "revision": "c00940499adf8b65b6fb",
+    "revision": "45eeee543cc5d66d9aaa",
     "url": "/insta_emails_new/static/css/7.f3d8cc4e.chunk.css"
   },
   {
-    "revision": "62e9f5be406661e07124",
+    "revision": "352d709e56820485b0f2",
     "url": "/insta_emails_new/static/css/8.f3d8cc4e.chunk.css"
   },
   {
-    "revision": "d43d3721e928e2d172cd",
-    "url": "/insta_emails_new/static/css/main.d385c6af.chunk.css"
+    "revision": "3bf615e2ac4d2d8edca1",
+    "url": "/insta_emails_new/static/css/main.82dbcca5.chunk.css"
   },
   {
     "revision": "09d226be19df169fab4b",
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insta_emails_new/static/js/11.8fc8ae4a.chunk.js"
   },
   {
-    "revision": "caab73d1577543d6332a",
-    "url": "/insta_emails_new/static/js/12.cf55e519.chunk.js"
+    "revision": "ae7755771ab28dc7735e",
+    "url": "/insta_emails_new/static/js/12.9dc7c486.chunk.js"
   },
   {
-    "revision": "da7f632cf2a3fb777400",
-    "url": "/insta_emails_new/static/js/13.40dcd80c.chunk.js"
+    "revision": "cb1e7e80b9490c0d15d3",
+    "url": "/insta_emails_new/static/js/13.6144e73a.chunk.js"
   },
   {
     "revision": "0c545a667c9acc19ba9c",
@@ -68,32 +68,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insta_emails_new/static/js/5.a8eb35c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "636053e036608ae797f5",
-    "url": "/insta_emails_new/static/js/6.f5a2ffb4.chunk.js"
+    "revision": "8b15b2670980a481fa40",
+    "url": "/insta_emails_new/static/js/6.7dac44ee.chunk.js"
   },
   {
     "revision": "81896c98bac7b5b16ab1d3790da5b937",
-    "url": "/insta_emails_new/static/js/6.f5a2ffb4.chunk.js.LICENSE.txt"
+    "url": "/insta_emails_new/static/js/6.7dac44ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c00940499adf8b65b6fb",
-    "url": "/insta_emails_new/static/js/7.4ee8aaa0.chunk.js"
+    "revision": "45eeee543cc5d66d9aaa",
+    "url": "/insta_emails_new/static/js/7.9ac8b181.chunk.js"
   },
   {
-    "revision": "62e9f5be406661e07124",
-    "url": "/insta_emails_new/static/js/8.43b9903a.chunk.js"
+    "revision": "352d709e56820485b0f2",
+    "url": "/insta_emails_new/static/js/8.45fb0e8c.chunk.js"
   },
   {
     "revision": "d942e784c138fb9fa51a",
     "url": "/insta_emails_new/static/js/9.90dbdcf1.chunk.js"
   },
   {
-    "revision": "d43d3721e928e2d172cd",
+    "revision": "3bf615e2ac4d2d8edca1",
     "url": "/insta_emails_new/static/js/main.4deab5d9.chunk.js"
   },
   {
-    "revision": "0220a501b07959e67b2f",
-    "url": "/insta_emails_new/static/js/runtime-main.0f52aad1.js"
+    "revision": "10a8e73bdf04e0850372",
+    "url": "/insta_emails_new/static/js/runtime-main.c09e11fa.js"
   },
   {
     "revision": "8c328009a7baa4fe656324526dab2277",
