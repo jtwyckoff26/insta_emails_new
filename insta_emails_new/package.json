@@ -1,0 +1,54 @@
+{
+  "name": "insta_emails_new",
+  "homepage": "https://jtwyckoff26.github.io/insta_emails_new",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@grapecity/spread-excelio": "^13.0.7",
+    "@grapecity/spread-sheets-react": "^13.0.7",
+    "@material-ui/core": "^4.9.10",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aws-amplify": "^3.0.8",
+    "axios": "^0.19.2",
+    "file-saver": "^2.0.2",
+    "gh-pages": "^2.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-csv-reader": "^3.0.5",
+    "react-dom": "^16.13.1",
+    "react-facebook-pixel": "^0.1.3",
+    "react-file-reader": "^1.1.4",
+    "react-ga": "^2.7.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "xlsx": "^0.15.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
