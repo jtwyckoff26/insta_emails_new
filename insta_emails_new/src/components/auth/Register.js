@@ -4,6 +4,7 @@ import Validate from "../utility/FormValidation";
 import { Auth } from "aws-amplify";
 import FormErrors from "../FormErrors";
 import LoadingSpinner from '../LoadingSpinner.js';
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
 
@@ -117,6 +118,18 @@ function Register(props) {
 
   return (
     <div>
+      <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
+        <div className="image-over-txt">SocialScrape</div>
+        <div>
+        <Link to="/">
+          <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+            <div className="homePage-buttonText">
+              Home
+            </div>
+          </Button>
+        </Link>
+        </div>
+      </div> 
       <div className="navBar-Margin">
       <div className="form-container">
         <h2>Register</h2>

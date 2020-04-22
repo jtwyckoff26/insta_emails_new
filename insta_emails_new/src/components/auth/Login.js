@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import LoadingSpinner from '../LoadingSpinner.js';
 import ReactGA from 'react-ga';
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import ReactPixel from 'react-facebook-pixel';
 
 
@@ -122,6 +123,25 @@ export function Login(props) {
 
   return (
     <div>
+      <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
+        <div className="image-over-txt">SocialScrape</div>
+        <div>
+        <Link to="/">
+          <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+            <div className="homePage-buttonText">
+              Home
+            </div>
+          </Button>
+        </Link>
+        <Link to="/register">
+          <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+            <div className="homePage-buttonText">
+              Register
+            </div>
+          </Button>
+        </Link>
+        </div>
+      </div> 
       <div className="navBar-Margin">
       <div style={{'maxWidth':'1000px'}} className="form-container">
         <h1>Log In</h1>

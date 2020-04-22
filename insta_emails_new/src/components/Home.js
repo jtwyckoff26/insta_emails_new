@@ -89,32 +89,27 @@ handleLogOut = async event => {
           </div>
         ) : (
           <div className="home">
-          <div>
-            {/* <Link to="/">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="green">
-                <div className="homePage-buttonText">
-                  Home
-                </div>
-              </Button>
-            </Link> */}
+          <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
+            <div className="image-over-txt">SocialScrape</div>
+            <div>
             <Link to="/login">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
                 <div className="homePage-buttonText">
                   Login
                 </div>
               </Button>
             </Link>
             <Link to="/register">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+              <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
                 <div className="homePage-buttonText">
                   Register
                 </div>
               </Button>
             </Link>
+            </div>
           </div> 
           <div d="homepage-img-div2">
           <div id="homepage-img-div"> 
-          <div className="image-over-txt">SocialScrape</div>
           </div>
           </div>
           </div>
