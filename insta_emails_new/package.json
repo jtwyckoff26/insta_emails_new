@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.1.2",
     "aws-amplify": "^3.0.8",
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
     "file-saver": "^2.0.2",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
@@ -50,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "reactstrap": "^8.4.1",
+    "styled-components": "^5.1.0"
   }
 }
