@@ -240,33 +240,24 @@ class MainTags extends React.Component {
     return (
       <div>
         <div>
-        {/* <Link to="/">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="green">
-                <div className="homePage-buttonText">
-                  Home
-                </div>
-              </Button>
-            </Link> */}
+          <div style={{'background':'black','width':'100%','marginBottom':'20px','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
+          <div className="image-over-txt">SocialScrape</div>
+          <div style={{'display':'flex','alignItems':'center','justifyContent':'center'}}>
             <Link to="/users">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
+              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
                 <div className="homePage-buttonText">
                   Username Search
                 </div>
               </Button>
             </Link>
-            <Link to="/tags">
-              <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Hashtag Search
-                </div>
-              </Button>
-            </Link>
-            <Button style={{'paddingLeft':'15px','paddingRight':'15px','width':'100%','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={this.toggle} color="primary" onClick={this.handleLogOut}>
+            <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={this.toggle} color="primary" onClick={this.handleLogOut}>
               <div className="homePage-buttonText">
                 Log Out
               </div>
             </Button>
           <hr />
+        </div>
+        </div>
         </div>
       <form>
         <h4>Hashtags (without #)</h4>
