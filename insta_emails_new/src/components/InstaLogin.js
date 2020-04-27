@@ -237,6 +237,15 @@ const InstaLogin = (props, value) => {
   const [passWord, setPassword] = useState('');
   //const [isLoading, setLoading] = useState('false');
 
+  const hiddenGen = (len) => {
+
+    let stringy = '*'
+    let lengthy = Number(len)
+    let hiden = stringy.repeat(lengthy)
+    console.log(hiden)
+    return (hiden)
+  }
+
   const handleLogOut = async (event) => {
     // event.preventDefault();
     try {
@@ -381,6 +390,15 @@ const InstaLogin = (props, value) => {
                         </ExpansionPanelDetails>
                       </ExpansionPanel>
                     </div>
+                    {props.instaInfo ? (
+                    <div >
+                      Current Card
+                      <p>@{props.instaInfo.name}</p>
+                      <p>{hiddenGen(props.instaInfo.pass)}</p>
+                    </div>
+                  ) : (
+                      <div></div>
+                    )}
                   </form>
                 </div>
               </Card>

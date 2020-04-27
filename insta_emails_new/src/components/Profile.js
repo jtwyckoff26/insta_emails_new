@@ -231,6 +231,7 @@ const SubscriptionStatus = (props, value) => {
   const classes = useStyles();
   const [subStatus, setSubStatus] = useState('');
   const [cardInfo, setCardInfo] = useState('');
+  const [instaInfo, setInstaInfo] = useState('');
   const [loading, setLoading] = useState('true');
   const [errorMessage, setErrorMessage] = useState('');
   const [tokenError, setTokenError] = useState('');
@@ -427,11 +428,15 @@ const SubscriptionStatus = (props, value) => {
         }
         if (result.status !== undefined) {
           setSubStatus(result.status);
-          console.log("Status: ", result.status);
+          //console.log("Status: ", result.status);
           if (result.card !== undefined) {
             setCardInfo(result.card);
-            console.log("Status: ", result.status);
-            console.log("Card: ", result.card);
+            //console.log("Status: ", result.status);
+            //console.log("Card: ", result.card);
+          }
+          if (result.card !== undefined) {
+            setInstaInfo(result.insta);
+            console.log("Insta: ", result.insta);
           }
           setLoading('false');
         }
@@ -471,10 +476,10 @@ const SubscriptionStatus = (props, value) => {
                     {/* {console.log("Value : ",value)} */}
                     <h4 className={classes.messageTitle}>You are not subscribed! Please fill in your information below to begin renting!</h4>
                   </div>
-                  <InstaLogin history={props.history} auth={props.auth}/>
+                  <InstaLogin history={props.history} auth={props.auth} instaInfo={instaInfo}/>
                   <StripeProvider apiKey="pk_test_QrUwGKpM3uurH3UFMwedvt5U00eZFwBBrl">
                     <Elements>
-                      <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} />
+                      <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} subStat={subStatus} cardInfo={cardInfo} />
                     </Elements>
                   </StripeProvider>
                 </>
@@ -487,10 +492,10 @@ const SubscriptionStatus = (props, value) => {
                     {/* {console.log("Value : ",value)} */}
                     <h4 className={classes.messageTitle}>You are not subscribed! Please fill in your information below to begin renting!</h4>
                   </div>
-                  <InstaLogin history={props.history} auth={props.auth}/>
+                  <InstaLogin history={props.history} auth={props.auth} instaInfo={instaInfo}/>
                   <StripeProvider apiKey="pk_test_QrUwGKpM3uurH3UFMwedvt5U00eZFwBBrl">
                     <Elements>
-                      <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} />
+                      <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} subStat={subStatus} cardInfo={cardInfo}  />
                     </Elements>
                   </StripeProvider>
                 </>
@@ -503,7 +508,7 @@ const SubscriptionStatus = (props, value) => {
                     {/* {console.log("Value : ",value)} */}
                     <h4 className={classes.messageTitle}>You are not subscribed! Please fill in your information below to begin renting!</h4>
                   </div>
-                  <InstaLogin history={props.history} auth={props.auth}/>
+                  <InstaLogin history={props.history} auth={props.auth} instaInfo={instaInfo}/>
                   <StripeProvider apiKey="pk_test_QrUwGKpM3uurH3UFMwedvt5U00eZFwBBrl">
                     <Elements>
                       <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} subStat={subStatus} cardInfo={cardInfo} />
@@ -519,7 +524,7 @@ const SubscriptionStatus = (props, value) => {
                     {/* {console.log("Value : ",value)} */}
                     <h4 className={classes.messageTitle}>You are not subscribed! Please fill in your information below to begin renting!</h4>
                   </div>
-                  <InstaLogin history={props.history} auth={props.auth}/>
+                  <InstaLogin history={props.history} auth={props.auth} instaInfo={instaInfo}/>
                   <StripeProvider apiKey="pk_test_QrUwGKpM3uurH3UFMwedvt5U00eZFwBBrl">
                     <Elements>
                       <InjectedSubscribeForm errorMessage={tokenError.message} handleToken={enrollUser} subStat={subStatus} cardInfo={cardInfo} />
