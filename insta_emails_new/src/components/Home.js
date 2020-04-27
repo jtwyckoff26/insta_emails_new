@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import { Auth } from 'aws-amplify';
+import NavBar from './NavBar';
 import Button from '@material-ui/core/Button';
 
 class Home extends Component {
@@ -51,64 +52,11 @@ handleLogOut = async event => {
 
     return (
       <React.Fragment>
-        {this.props.auth.isAuthenticated && this.props.auth.user ? (
-          <div className="home">
-          <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-          <div className="image-over-txt">SocialScrape</div>
-          <div>
-            <Link to="/users">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Username Search
-                </div>
-              </Button>
-            </Link>
-            <Link to="/tags">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Hashtag Search
-                </div>
-              </Button>
-            </Link>
-            <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={this.toggle} color="primary" onClick={this.handleLogOut}>
-              <div className="homePage-buttonText">
-                Log Out
-              </div>
-            </Button>
-            </div> 
-          </div>
+        <NavBar history={this.props.history} auth={this.props.auth}/>
           <div d="homepage-img-div2">
           <div id="homepage-img-div"> 
           </div>
           </div>
-          </div>
-        ) : (
-          <div className="home">
-          <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-            <div className="image-over-txt">SocialScrape</div>
-            <div>
-            <Link to="/login">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Login
-                </div>
-              </Button>
-            </Link>
-            <Link to="/register">
-              <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Register
-                </div>
-              </Button>
-            </Link>
-            </div>
-          </div> 
-          <div d="homepage-img-div2">
-          <div id="homepage-img-div"> 
-          </div>
-          </div>
-          </div>
-        )}
       </React.Fragment>
     );
   }

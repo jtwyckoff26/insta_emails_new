@@ -58,6 +58,7 @@ const ChangePassword = lazy(() => import('./components/auth/ChangePassword'));
 const ChangePasswordConfirm = lazy(() => import('./components/auth/ChangePasswordConfirm'));
 const ForgotPasswordVerification = lazy(() => import('./components/auth/ForgotPasswordVerification'));
 const ForgotPassword = lazy(() => import('./components/auth/ForgotPassword'));
+const Profile = lazy(() => import('./components/Profile'));
 
 class App extends Component {
     state = {
@@ -127,6 +128,7 @@ class App extends Component {
                         <PrivateRoute component={MainUsers} exact path="/users" />
                         <PrivateRoute component={ChangePassword} exact path="/changepassword" />
                         <PrivateRoute component={ChangePasswordConfirm} exact path="/changepasswordconfirm" />
+                        <PrivateRoute component={Profile} exact path="/profile" />
                         </Suspense>
                         </Switch>
                     </Router>

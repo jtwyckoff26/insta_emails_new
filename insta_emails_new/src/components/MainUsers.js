@@ -13,6 +13,7 @@ import CSVReader from 'react-csv-reader'
 import LoadingSpinner from './LoadingSpinner';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import { Auth } from 'aws-amplify';
+import NavBar from './NavBar';
 import Button from '@material-ui/core/Button';
 
 import "./style.css";
@@ -239,24 +240,7 @@ class MainUsers extends React.Component {
     return (
       <div>
         <div>
-          <div style={{'background':'black','marginBottom':'20px','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-          <div className="image-over-txt">SocialScrape</div>
-          <div style={{'display':'flex','align-items':'center','justifyContent':'center'}}>
-            <Link to="/tags">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Hashtag Search
-                </div>
-              </Button>
-            </Link>
-            <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={this.toggle} color="primary" onClick={this.handleLogOut}>
-              <div className="homePage-buttonText">
-                Log Out
-              </div>
-            </Button>
-          <hr />
-        </div>
-        </div>
+        <NavBar history={this.props.history} auth={this.props.auth}/>
         </div>
       <form>
         <h4>Accounts (without @)</h4>

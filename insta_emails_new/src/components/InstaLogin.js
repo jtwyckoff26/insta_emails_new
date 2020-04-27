@@ -222,8 +222,9 @@ const useStyles = makeStyles(theme => ({
   // },
 }));
 
+const InjectedSubscribeForm = injectStripe(SubscribeForm);
 
-const NavBar = (props) => {
+const InstaLogin = (props, value) => {
   //console.log("This: ", this);
   const classes = useStyles();
   const [subStatus, setSubStatus] = useState('');
@@ -321,69 +322,69 @@ const NavBar = (props) => {
     // }
   };
 
+
+  useEffect(() => {
+    //console.log('Use effect');
+  }, [value]);
+
   return (
     <>
       {(() => {
         return (
           <>
-          {console.log("Props: ",props)}
-           {props.auth.isAuthenticated && props.auth.user ? (
-          <div className="home">
-          <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-          <div className="image-over-txt">SocialScrape</div>
-          <div>
-             <Link to="/profile">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Profile
-                </div>
-              </Button>
-            </Link>
-            <Link to="/users">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Username Search
-                </div>
-              </Button>
-            </Link>
-            <Link to="/tags">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Hashtag Search
-                </div>
-              </Button>
-            </Link>
-            <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={toggle} color="primary" onClick={handleLogOut}>
-              <div className="homePage-buttonText">
-                Log Out
-              </div>
-            </Button>
-            </div> 
-          </div>
-          </div>
-        ) : (
-          <div className="home">
-          <div style={{'background':'black','width':'100%','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-            <div className="image-over-txt">SocialScrape</div>
             <div>
-            <Link to="/login">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Login
+              <Card className={classes.card}>
+                <div style={{ 'width': '100%', 'marginBottom': '20px' }} className={classes.messageCard2}>
+                  <form className={classes.container} >
+                    <div>
+                      <ExpansionPanel style={{ 'borderRadius': '0px', 'outline': 'none', 'boxShadow': 'none', 'border': 'none', 'marginTop': '0px', 'padding': '0px' }} className="faq-panel genath-font">
+                        <ExpansionPanelSummary style={{ 'borderRadius': '0px', 'background': 'rgba(20,20,20,1)', 'color': 'rgba(255,255,255,1)', 'borderBottom': '1px solid rgba(255,255,255,0.1)' }} expandIcon={<ExpandMoreIcon style={{ 'color': 'rgba(255,255,255,1)' }} />} aria-controls="panel1a-content" id="panel1a-header">
+                          Instagram Info
+                  </ExpansionPanelSummary>
+                        <ExpansionPanelDetails className={'faq-answer'}>
+                          <div>
+                            {/* <Typography className={classes.title2} variant="h5" gutterBottom>
+                          Card Address:
+                    </Typography> */}
+                            <TextField
+                              id="standard-search"
+                              label="Instagram Username"
+                              placeholder="Username"
+                              type="search"
+                              className={classes.textField}
+                              margin="normal"
+                              helperText="Required"
+                              //ref={cardHolderName}
+                              value={userName}
+                              onChange={e => setUsername(e.target.value)}
+                            />
+                            <br />
+                            <TextField
+                              id="standard-search"
+                              label="Instagram Password"
+                              placeholder="Password"
+                              type="search"
+                              className={classes.textField}
+                              margin="normal"
+                              helperText="Required"
+                              //ref={addressLine1}
+                              value={passWord}
+                              onChange={e => setPassword(e.target.value)}
+                            />
+                            <br />
+                          </div>
+                          <br />
+                          <br />
+                          <div>
+                          <Button color="primary" onClick={handleSubmitInsta} >Add Instagram</Button>
+                          </div>
+                        </ExpansionPanelDetails>
+                      </ExpansionPanel>
+                    </div>
+                  </form>
                 </div>
-              </Button>
-            </Link>
-            <Link to="/register">
-              <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Register
-                </div>
-              </Button>
-            </Link>
+              </Card>
             </div>
-          </div> 
-          </div>
-        )}
           </>
         );
       })()}
@@ -391,4 +392,4 @@ const NavBar = (props) => {
   );
 };
 
-export default withRouter(NavBar);
+export default InstaLogin;

@@ -13,6 +13,7 @@ import CSVReader from 'react-csv-reader'
 import LoadingSpinner from './LoadingSpinner';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import { Auth } from 'aws-amplify';
+import NavBar from './NavBar';
 import Button from '@material-ui/core/Button';
 
 import "./style.css";
@@ -240,24 +241,7 @@ class MainTags extends React.Component {
     return (
       <div>
         <div>
-          <div style={{'background':'black','width':'100%','marginBottom':'20px','padding':'10px', 'display':'flex','alignItems':'center','justifyContent':'space-between'}}>
-          <div className="image-over-txt">SocialScrape</div>
-          <div style={{'display':'flex','alignItems':'center','justifyContent':'center'}}>
-            <Link to="/users">
-              <Button style={{'paddingLeft':'15px','background':'white','marginRight':'10px','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} color="blue">
-                <div className="homePage-buttonText">
-                  Username Search
-                </div>
-              </Button>
-            </Link>
-            <Button style={{'paddingLeft':'15px','background':'white','paddingRight':'15px','borderRadius':'20px','pointerEvents':'auto','justifyContent':'center !important'}} onClick={this.toggle} color="primary" onClick={this.handleLogOut}>
-              <div className="homePage-buttonText">
-                Log Out
-              </div>
-            </Button>
-          <hr />
-        </div>
-        </div>
+        <NavBar history={this.props.history} auth={this.props.auth}/>
         </div>
       <form>
         <h4>Hashtags (without #)</h4>
